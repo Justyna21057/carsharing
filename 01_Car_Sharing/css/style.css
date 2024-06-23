@@ -1,66 +1,93 @@
+:root {
+    --main-color: #FF0000;
+}
+
 * {
     box-sizing: border-box;
 }
 
-.main {
-    background-image: url(../images/Image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    
+body * {
+    /* border: 1px dotted blue; */
 }
 
-.stopka {
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 97vh;
+    background: rgba(0, 0, 0, .3) url("../images/Image.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-bar {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    height: 93px;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    height: 90px;
-    contain: "";
-    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.nav-bar * {
+    z-index: 100;
+}
+
+.nav-bar::after {
+    content: "";
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 93px;
+    z-index: 0;
+    display: inline-block;
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;
 }
 
 .logo {
     font-size: 35px;
-    font-family: Nunito Sans, ExtraBold;
-    font-weight: bold;
-    color: red;
-    text-transform: uppercase;
-    margin-top: 20px;
-    position: relative;
-    left: 141px;
+    font-weight: bolder;
     display: flex;
     align-items: center;
-
 }
 
 .logo span {
-    color: white;
+    color: var(--main-color);
+    margin-right: 5px;
 }
 
-.logo .logo-icon {
+.logo img {
     height: 35px;
-    width: 27px;
+    margin-right: 5px;
 }
 
-
-
-.navigation-box-list {
+.nav-list {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    right: 165px;
-    margin-top: 33px;
-   
-    
 }
 
-a {
-    font-size: 16px;
-    font-family: Nunito Sans, ExtraBold;
-    line-height: 22px;
+.nav-list li {
+    width: 128px;
+}
+
+.nav-list a {
+    text-decoration: none;
     color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-    
+    display: inline-block;
+    width: 100%;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.nav-list a:hover {
+    background-color: rgba(255,255,255, 0.3);
+}
