@@ -9,3 +9,58 @@
     height: 100vh;
     
 }
+
+.stopka {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 90px;
+    contain: "";
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 35px;
+    font-family: Nunito Sans, ExtraBold;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: relative;
+    left: 141px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo span {
+    color: white;
+}
+
+.logo .logo-icon {
+    height: 35px;
+    width: 27px;
+}
+
+
+
+.navigation-box-list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 165px;
+    margin-top: 33px;
+   
+    
+}
+
+a {
+    font-size: 16px;
+    font-family: Nunito Sans, ExtraBold;
+    line-height: 22px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
