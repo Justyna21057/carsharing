@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url(../images/Image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
