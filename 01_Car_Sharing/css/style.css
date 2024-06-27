@@ -1,18 +1,20 @@
 :root {
     --main-color: #FF0000;
+    --accent-color: white;
+    --main-text-color: #000000;
 }
 
 * {
     box-sizing: border-box;
 }
 
-body * {
-    /* border: 1px dotted blue; */
-}
+/* body * {
+    border: 1px dotted blue;
+} */
 
 body {
-    background-color: black;
     color: white;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 header {
@@ -23,7 +25,7 @@ header {
 }
 
 .nav-bar {
-    font-family: "Nunito Sans", sans-serif;
+   
     text-transform: uppercase;
     height: 93px;
     display: flex;
@@ -79,7 +81,7 @@ header {
 
 .nav-list a {
     text-decoration: none;
-    color: white;
+    color: var(--accent-color);
     display: inline-block;
     width: 100%;
     height: 93px;
@@ -91,3 +93,353 @@ header {
 .nav-list a:hover {
     background-color: rgba(255,255,255, 0.3);
 }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(97vh - 93px);
+}
+
+.title {
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.buttons {
+    font-size: 16px;
+}
+
+.button {
+    padding: 22px 55px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.button-alert {
+    background-color: var(--main-color);
+    color: var(--accent-color)
+}
+
+.button-info {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+.space-right {
+    margin-right: 25px;
+}
+
+.arrow {
+    width: 55px;
+    height: 55px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translate(-50%, 0);
+
+}
+
+.blog {
+    background-color: var(--accent-color);
+    padding-top: 95px;
+    color: var(--main-text-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-title {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.lines::before, .lines::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 50px;
+    background-color: var(--main-color);
+    position: relative;
+    top: 15px;
+}
+
+.lines::before {
+    margin-right: 10px;
+}
+
+.lines::after {
+    margin-left: 10px;
+}
+
+.article {
+    height: 434px;
+    width: 352px;
+    color: #6A6A6A;
+    margin-top: 20px;
+    
+    
+}
+
+.article-img {
+    height: 234px;
+    width: 352px;
+    padding: 10px;
+
+}
+
+.article-title {
+    margin-top: 20px;
+    height: 26px;
+    width: 231px;
+    padding: 10px;
+}
+
+.article-text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 79px;
+    width: 260px;
+    padding: 10px;
+    
+}
+
+.button-article {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    height: 40px;
+    width: 142px;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0;
+    
+}
+.articles-service {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 184px;
+    margin-right: 184px;
+    
+}
+.articles {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    margin: 100px 184px;
+}
+
+.article-service {
+    margin-top: -100px;
+}
+
+.service {
+    background-color: #28272C;
+    height: 643px;
+    width: 100%;
+
+}
+
+.service-title {
+   position: relative;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.img-service {
+    height: 170px;
+    width: 170px;
+    margin-left: 34px;
+    margin-top: 182px;
+    
+}
+
+.service-title {
+    text-align: center;
+    width: 231px;
+    height: 26px;
+
+}
+
+.service-text {
+    text-align: center;
+
+    width: 231px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.service-button {
+    margin-top: 20px;
+    margin-left: 59px;
+    
+
+}
+
+.about-contact {
+    height: 489px;
+    width: 904px;
+    background-color: white;
+    margin-left: 231px;
+   
+}
+
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .blog-title {
+    color: black;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+
+.form {
+    height: 316,5px;
+    width: 444px;
+    margin-top: 82px;
+}
+
+.contact-main {
+    display: flex;
+    
+}
+
+form {
+    margin-top: 80px;
+    display: block;
+}
+
+#text, #email {
+    width: 444px;
+    height: 38px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    border-radius: 8px;
+    
+}
+
+#message {
+    width: 444px;
+    height: 140px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+
+}
+
+#text {
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    
+}
+
+#email {
+    border: 1px solid #D1D1D1;
+}
+.checkbox {
+    display: flex;
+    color: #B2B2B2;
+    font-size: 10px;
+    margin-left: 35px;
+    height: 71px;
+    width: 412px;
+    text-align: left;
+}
+
+.checkbox input {
+    height: 8px;
+    width: 8px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+    margin-right: 5px;
+}
+
+.button-send {
+    display: inline-block;
+    background-color: white;
+    margin-left: 350px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    opacity: 1;
+    width: 142px;
+    height: 40px;
+    color: var(--main-color);
+}
+
+.footer {
+
+    width: 100%;
+    height: 252px;
+    background-color: #28272C;
+    margin-top: 250px;
+}
+
+.stopka {
+    display: flex;
+    margin-left: 140px;
+    padding-top: 40px;
+}
+
+.text-logo {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.text-logo span {
+    color: var(--main-color);
+}
+
+ul {
+    display: inline-block;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+li {
+    padding: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-page {
+    color: var(--main-color);
+}
+
+.copy {
+    display: flex;
+    justify-content: end;
+    margin-right: 139px;
+    font-size: 12px;
+    color: #D1D1D1;
+    padding: 3px;
+}
+
